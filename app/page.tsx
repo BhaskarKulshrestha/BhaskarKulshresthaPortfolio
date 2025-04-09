@@ -1,11 +1,18 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import { Github, Linkedin, Mail, ExternalLink, Code } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { ResumeButton } from "@/components/resume-button"
+import Image from "next/image";
+import { Github, Linkedin, Mail, ExternalLink, Code } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ResumeButton } from "@/components/resume-button";
 
 export default function Home() {
   return (
@@ -19,27 +26,42 @@ export default function Home() {
           <nav>
             <ul className="flex space-x-6">
               <li>
-                <a href="#about" className="text-gray-600 hover:text-purple-600 transition-colors">
+                <a
+                  href="#about"
+                  className="text-gray-600 hover:text-purple-600 transition-colors"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#skills" className="text-gray-600 hover:text-purple-600 transition-colors">
+                <a
+                  href="#skills"
+                  className="text-gray-600 hover:text-purple-600 transition-colors"
+                >
                   Skills
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-600 hover:text-purple-600 transition-colors">
+                <a
+                  href="#projects"
+                  className="text-gray-600 hover:text-purple-600 transition-colors"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#leetcode" className="text-gray-600 hover:text-purple-600 transition-colors">
+                <a
+                  href="#leetcode"
+                  className="text-gray-600 hover:text-purple-600 transition-colors"
+                >
                   LeetCode
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-600 hover:text-purple-600 transition-colors">
+                <a
+                  href="#contact"
+                  className="text-gray-600 hover:text-purple-600 transition-colors"
+                >
                   Contact
                 </a>
               </li>
@@ -59,9 +81,12 @@ export default function Home() {
                   Bhaskar Kulshrestha
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-600 mb-6">Software Developer & Problem Solver</p>
+              <p className="text-xl md:text-2xl text-gray-600 mb-6">
+                Software Developer & Problem Solver
+              </p>
               <p className="text-gray-600 mb-8 max-w-lg">
-                Passionate about building elegant solutions to complex problems with clean, efficient code.
+                Passionate about building elegant solutions to complex problems
+                with clean, efficient code.
               </p>
               <div className="flex space-x-4">
                 <Button
@@ -94,22 +119,164 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center">
               About{" "}
-              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Me</span>
+              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                Me
+              </span>
             </h2>
             <div className="max-w-3xl mx-auto">
               <p className="text-gray-600 mb-6 text-lg">
-                I'm Bhaskar Kulshrestha, a software developer with a passion for creating efficient and elegant
-                solutions. I specialize in building web applications and solving complex programming challenges.
+                I'm Bhaskar Kulshrestha, a software developer with a passion for
+                creating efficient and elegant solutions. I specialize in
+                building web applications and solving complex programming
+                challenges.
               </p>
               <p className="text-gray-600 mb-6 text-lg">
-                My journey in software development began with a curiosity about how things work, which evolved into a
-                deep interest in programming and problem-solving. I enjoy working with modern technologies and
-                continuously expanding my knowledge in the field.
+                My journey in software development began with a curiosity about
+                how things work, which evolved into a deep interest in
+                programming and problem-solving. I enjoy working with modern
+                technologies and continuously expanding my knowledge in the
+                field.
               </p>
               <p className="text-gray-600 text-lg">
-                When I'm not coding, you can find me solving algorithmic problems on LeetCode, contributing to
-                open-source projects, or exploring new technologies to enhance my skill set.
+                When I'm not coding, you can find me solving algorithmic
+                problems on LeetCode, contributing to open-source projects, or
+                exploring new technologies to enhance my skill set.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="py-20 px-4 bg-gray-50">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              My{" "}
+              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                Experience
+              </span>
+            </h2>
+            <div className="max-w-3xl mx-auto space-y-8">
+              {/* SAP Experience */}
+              <Card className="border-l-4 border-blue-500 shadow-md">
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold flex items-center gap-2">
+                    <Image
+                      src="https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg"
+                      alt="SAP Logo"
+                      width={100}
+                      height={100}
+                      className="rounded-sm"
+                    />
+                    SAP
+                  </CardTitle>
+                  <CardDescription className="text-gray-500">
+                    Full-time • 9 mos • Bengaluru, Karnataka, India
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="py-4">
+                  <h3 className="font-semibold mb-2">
+                    Rotation Phase-1: Developer - S/4 Hana Professional Services
+                    Project #abap
+                  </h3>
+                  <p className="text-gray-600 mb-2">
+                    Sep 2024 - Present • ( On-site )
+                  </p>
+                  <p className="text-gray-600 mb-2 font-semibold">
+                    Key Highlights:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-600 mb-4">
+                    <ul>
+                      <li>
+                        Innovative Cloud Solutions: Work on cloud applications
+                        in S/4HANA Public Cloud for professional services.
+                      </li>
+                      <li>
+                        End-to-End Project Management: Develop solutions for
+                        efficient project planning, execution, and monitoring.
+                      </li>
+                      <li>
+                        High-Impact Clients: Collaborate with industry leaders
+                        like PwC and Deloitte, while expanding to new clients.
+                      </li>
+                    </ul>
+                  </ul>
+
+                  <p className="text-gray-600 mb-2 font-semibold">
+                    Roles and Responsibilities:
+                  </p>
+                  <ul className="list-disc list-inside text-gray-600 mb-4">
+                    <ul>
+                      <li>
+                        Develop & Customize SAP Applications: Use Fiori, UI5,
+                        RAP, ABAP, CDS, OData, etc.
+                      </li>
+                      <li>
+                        Code Quality: Write clean, scalable, and efficient code;
+                        troubleshoot and debug.
+                      </li>
+                      <li>
+                        Collaborate Cross-Functionally: Work with product
+                        owners, scrum masters, development, and QA teams.
+                      </li>
+                      <li>
+                        Full Development Lifecycle: Engage in design,
+                        development, testing, and deployment.
+                      </li>
+                      <li>
+                        Stay Updated: Continuously learn and apply latest SAP
+                        technologies and trends.
+                      </li>
+                    </ul>
+                  </ul>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">ABAP</Badge>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">
+                    Core data service (CDS) in abap
+                  </Badge>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">
+                    SAP GUI (SAP Graphical User Interface )
+                  </Badge>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">
+                    SAP RAP (RESTful Application Programming Model)
+                  </Badge>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">
+                    REST API
+                  </Badge>
+                  
+                </CardContent>
+              </Card>
+
+
+              {/* Oasis Infobyte Internship */}
+              <Card className="border-l-4 border-orange-500 shadow-md">
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold flex items-center gap-2">
+                    <Image
+                      src="https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/327004267_464468942404908_224498575824111512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xHj9kXV-GIgQ7kNvwEJSCqO&_nc_oc=AdmT4V24PVegaHDBN2bix8tL70ybqc5VxtnLeQEpegnk26RXLdpim_0iamrUABFynV0&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=hGIjDEknl4SPlmF2NQ_AGA&oh=00_AfHaK5jta-HqgcrGVY6JC_bs67et4qCeQjDG60qotd68lg&oe=67FC7E0E"
+                      alt="Oasis Infobyte Logo"
+                      width={100}
+                      height={100}
+                      className="rounded-sm"
+                    />
+                    Web Development and Designing Intern
+                  </CardTitle>
+                  <CardDescription className="text-gray-500">
+                    Oasis Infobyte • Internship • Sep 2022 - Oct 2022 • 2 mos •
+                    India
+                  </CardDescription>
+                </CardHeader>
+                <CardContent className="py-4">
+                  <p className="text-gray-600 mb-4">
+                  Build and design landing pages that are visually appealing and user-friendly,Create a personal portfolio website that showcases one's skills and accomplishments,Develop a temperature converting website that accurately converts temperatures between Celsius and Fahrenheit , Write clean and well-documented code , Collaborate with designers, project managers, and other team members to ensure timely completion of projects , updated my knowledge of web development tools and technologies.
+                  </p>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">
+                    Problem Solving
+                  </Badge>
+                  <Badge className="bg-gray-200 text-gray-700 mr-2">
+                    English
+                  </Badge>
+                  <Badge className="bg-gray-200 text-gray-700">+6 skills</Badge>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -119,49 +286,148 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center">
               My{" "}
-              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Skills</span>
+              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                Skills
+              </span>
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               {/* Languages */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl font-semibold">Languages</CardTitle>
+                  <CardTitle className="text-xl font-semibold">
+                    Languages
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-2">
-                  <Badge className="bg-blue-500 hover:bg-blue-600">JavaScript</Badge>
-                  <Badge className="bg-yellow-500 hover:bg-yellow-600">Python</Badge>
-                  <Badge className="bg-orange-500 hover:bg-orange-600">Java</Badge>
+                  <Badge className="bg-blue-500 hover:bg-blue-600">
+                    JavaScript
+                  </Badge>
+                  <Badge className="bg-yellow-500 hover:bg-yellow-600">
+                    Python
+                  </Badge>
+                  <Badge className="bg-orange-500 hover:bg-orange-600">
+                    Java
+                  </Badge>
                   <Badge className="bg-cyan-500 hover:bg-cyan-600">C++</Badge>
-                  <Badge className="bg-green-500 hover:bg-green-600">HTML/CSS</Badge>
+                  <Badge className="bg-green-500 hover:bg-green-600">
+                    HTML/CSS
+                  </Badge>
+                  <Badge className="bg-yellow-500 hover:bg-yellow-600">
+                    ABAP
+                  </Badge>
+                  <Badge className="bg-green-500 hover:bg-green-600">
+                    SAP RAP
+                  </Badge>
                 </CardContent>
               </Card>
 
               {/* Frameworks & Libraries */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl font-semibold">Frameworks & Libraries</CardTitle>
+                  <CardTitle className="text-xl font-semibold">
+                    Frameworks & Libraries
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-2">
                   <Badge className="bg-blue-500 hover:bg-blue-600">React</Badge>
-                  <Badge className="bg-purple-500 hover:bg-purple-600">Next.js</Badge>
-                  <Badge className="bg-green-500 hover:bg-green-600">Node.js</Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    Spring Boot
+                  </Badge>
+                  <Badge className="bg-green-500 hover:bg-green-600">
+                    Node.js
+                  </Badge>
                   <Badge className="bg-red-500 hover:bg-red-600">Express</Badge>
-                  <Badge className="bg-cyan-500 hover:bg-cyan-600">Tailwind CSS</Badge>
+  
                 </CardContent>
               </Card>
 
               {/* Tools & Technologies */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-xl font-semibold">Tools & Technologies</CardTitle>
+                  <CardTitle className="text-xl font-semibold">
+                    Tools & Technologies
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="flex flex-wrap gap-2">
-                  <Badge className="bg-orange-500 hover:bg-orange-600">Git</Badge>
-                  <Badge className="bg-blue-500 hover:bg-blue-600">Docker</Badge>
-                  <Badge className="bg-green-500 hover:bg-green-600">MongoDB</Badge>
-                  <Badge className="bg-purple-500 hover:bg-purple-600">PostgreSQL</Badge>
+                  <Badge className="bg-orange-500 hover:bg-orange-600">
+                    Git
+                  </Badge>
+                  <Badge className="bg-blue-500 hover:bg-blue-600">
+                    Docker
+                  </Badge>
+                  <Badge className="bg-green-500 hover:bg-green-600">
+                    MongoDB
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    PostgreSQL
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    MySQL
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    OData
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    Git
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    Github
+                  </Badge>
                   <Badge className="bg-red-500 hover:bg-red-600">AWS</Badge>
+                </CardContent>
+              </Card>
+
+              {/* SAP Technologies */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold">
+                    SAP Technologies
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-wrap gap-2">
+                  <Badge className="bg-orange-500 hover:bg-orange-600">
+                    ABAP
+                  </Badge>
+                  <Badge className="bg-blue-500 hover:bg-blue-600">
+                    RAP
+                  </Badge>
+                  <Badge className="bg-green-500 hover:bg-green-600">
+                    CDS view 
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    Debugging
+                  </Badge>
+                  <Badge className="bg-purple-500 hover:bg-purple-600">
+                    SAP Report 
+                  </Badge>
+                  <Badge className="bg-red-500 hover:bg-red-600">
+                    Transaction Codes
+                  </Badge>
+                </CardContent>
+              </Card>
+
+              {/* Other Concepts */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-xl font-semibold">
+                    Other Concepts
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-wrap gap-2">
+                  <Badge className="bg-orange-500 hover:bg-orange-600">
+                    Data Structure
+                  </Badge>
+                  <Badge className="bg-blue-500 hover:bg-blue-600">
+                    Algorithms
+                  </Badge>
+                  <Badge className="bg-green-500 hover:bg-green-600">
+                    OOPs
+                  </Badge>
+                  <Badge className="bg-red-500 hover:bg-red-600">
+                    Version Control
+                  </Badge>
+                  
                 </CardContent>
               </Card>
             </div>
@@ -175,7 +441,8 @@ export default function Home() {
             <div
               className="w-full h-full bg-cover bg-center opacity-10"
               style={{
-                backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+                backgroundImage:
+                  "url('/placeholder.svg?height=1080&width=1920')",
                 filter: "blur(8px)",
               }}
             ></div>
@@ -194,25 +461,29 @@ export default function Home() {
               {/* Project 1 */}
               <Card className="flex flex-col h-full backdrop-blur-sm bg-white/80 border border-gray-200 shadow-lg hover:shadow-xl transition-all">
                 <CardHeader>
-                  <CardTitle>Competitive Programming</CardTitle>
-                  <CardDescription>A collection of competitive programming solutions and algorithms</CardDescription>
+                  <CardTitle>CodeSnippetManager</CardTitle>
+                  <CardDescription>
+                    A collection of competitive programming solutions and
+                    algorithms
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">C++</Badge>
-                    <Badge variant="outline">Python</Badge>
-                    <Badge variant="outline">Data Structures</Badge>
-                    <Badge variant="outline">Algorithms</Badge>
+                    <Badge variant="outline">MERN stack</Badge>
+                    <Badge variant="outline">Docker</Badge>
+                    <Badge variant="outline">Jenkins</Badge>
                   </div>
                   <p className="text-gray-600">
-                    Solutions to various competitive programming problems from platforms like LeetCode, CodeForces, and
-                    HackerRank. Includes implementations of common algorithms and data structures.
+                    Solutions to various competitive programming problems from
+                    platforms like LeetCode, CodeForces, and HackerRank.
+                    Includes implementations of common algorithms and data
+                    structures.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <Button variant="outline" size="sm" asChild>
                     <a
-                      href="https://github.com/BhaskarKulshrestha/Competitive-Programming"
+                      href="https://github.com/BhaskarKulshrestha/CodeSnippetManager"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
@@ -226,25 +497,26 @@ export default function Home() {
               {/* Project 2 */}
               <Card className="flex flex-col h-full backdrop-blur-sm bg-white/80 border border-gray-200 shadow-lg hover:shadow-xl transition-all">
                 <CardHeader>
-                  <CardTitle>Data Structures and Algorithms</CardTitle>
-                  <CardDescription>Implementation of various data structures and algorithms in C++</CardDescription>
+                  <CardTitle>KEEPER: The Note Apps</CardTitle>
+                  <CardDescription>
+                  Keeper is the note taking application built on 
+                  MERN stack.
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">C++</Badge>
-                    <Badge variant="outline">Data Structures</Badge>
-                    <Badge variant="outline">Algorithms</Badge>
-                    <Badge variant="outline">Problem Solving</Badge>
+                    <Badge variant="outline">Node.js</Badge>
+                    <Badge variant="outline">React.js</Badge>
+                    <Badge variant="outline">MongoDB</Badge>
                   </div>
                   <p className="text-gray-600">
-                    A comprehensive collection of data structures and algorithms implemented in C++. Includes sorting
-                    algorithms, searching techniques, graph algorithms, and more.
+                  Keeper-Version-2.0 is an updated version of the Keeper application, a simple note-taking web app built with React.js. With Keeper-Version-2.0, users can create, edit, and delete notes effortlessly build on the MERN techstack.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <Button variant="outline" size="sm" asChild>
                     <a
-                      href="https://github.com/BhaskarKulshrestha/Data-Structures-and-Algorithms"
+                      href="https://github.com/BhaskarKulshrestha/Keeper-Version-2.0"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
@@ -258,19 +530,21 @@ export default function Home() {
               {/* Project 3 */}
               <Card className="flex flex-col h-full backdrop-blur-sm bg-white/80 border border-gray-200 shadow-lg hover:shadow-xl transition-all">
                 <CardHeader>
-                  <CardTitle>Machine Learning Projects</CardTitle>
-                  <CardDescription>Collection of machine learning models and projects</CardDescription>
+                  <CardTitle>ECOMM-The-online-Store
+                  </CardTitle>
+                  <CardDescription>
+                    A UI of the E-commerce website.
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2 mb-4">
-                    <Badge variant="outline">Python</Badge>
-                    <Badge variant="outline">TensorFlow</Badge>
-                    <Badge variant="outline">Scikit-learn</Badge>
-                    <Badge variant="outline">Data Analysis</Badge>
+                    <Badge variant="outline">HTML</Badge>
+                    <Badge variant="outline">CSS</Badge>
+                    <Badge variant="outline">Javascript</Badge>
+                    <Badge variant="outline">Bootstrap</Badge>
                   </div>
                   <p className="text-gray-600">
-                    Various machine learning projects including classification, regression, and clustering models.
-                    Implementations of neural networks and data preprocessing techniques.
+                  E-commerce refers to the buying and selling of goods and services online. Online stores, also known as e-commerce websites, are platforms that allow businesses to sell their products or services to customers over the internet. E-commerce has become increasingly popular in recent years due to the convenience and accessibility it offers to both businesses and consumers.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -290,25 +564,26 @@ export default function Home() {
               {/* Project 4 */}
               <Card className="flex flex-col h-full backdrop-blur-sm bg-white/80 border border-gray-200 shadow-lg hover:shadow-xl transition-all">
                 <CardHeader>
-                  <CardTitle>Web Development Portfolio</CardTitle>
-                  <CardDescription>Collection of web development projects using modern frameworks</CardDescription>
+                  <CardTitle>Daily-Journal---The-Blog-Website</CardTitle>
+                  <CardDescription>
+                    A website where you can write the journal of your daily-tasks and save it.
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2 mb-4">
                     <Badge variant="outline">JavaScript</Badge>
-                    <Badge variant="outline">React</Badge>
-                    <Badge variant="outline">Next.js</Badge>
-                    <Badge variant="outline">Tailwind CSS</Badge>
+                    <Badge variant="outline">Bootstrap</Badge>
+                    <Badge variant="outline">EJS</Badge>
+                    <Badge variant="outline">MongoDB</Badge>
                   </div>
                   <p className="text-gray-600">
-                    A showcase of web development projects built with modern frameworks and libraries. Includes
-                    responsive designs, API integrations, and interactive user interfaces.
+                  The "DAILY-JOURNAL - Your Blog Area" is a web application designed for users who want to maintain a personal blog. This repository provides the complete source code of the application along with the necessary documentation to run it on a local machine.
                   </p>
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <Button variant="outline" size="sm" asChild>
                     <a
-                      href="https://github.com/BhaskarKulshrestha/Web-Development-Portfolio"
+                      href="https://github.com/BhaskarKulshrestha/Daily-Journal---The-Blog-Website-Full-Version-"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2"
@@ -353,11 +628,14 @@ export default function Home() {
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
                       <p className="text-gray-500 text-sm">Global Ranking</p>
-                      <p className="text-3xl font-bold text-green-500">Top 10%</p>
+                      <p className="text-3xl font-bold text-green-500">
+                        Top 10%
+                      </p>
                     </div>
                   </div>
                   <p className="text-gray-600 mb-6 text-center">
-                    I regularly solve algorithmic problems to sharpen my problem-solving skills and coding efficiency.
+                    I regularly solve algorithmic problems to sharpen my
+                    problem-solving skills and coding efficiency.
                   </p>
                   <div className="flex justify-center">
                     <Button
@@ -380,16 +658,81 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Github Section */}
+        <section id="Github" className="py-20 px-4 bg-gray-50">
+          <div className="container mx-auto">
+            <h2 className="text-3xl font-bold mb-12 text-center">
+              My{" "}
+              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                GitHub
+              </span>{" "}
+              Profile
+            </h2>
+
+            <div className="max-w-3xl mx-auto">
+              <Card>
+                <CardHeader className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white">
+                  <CardTitle className="flex items-center justify-between">
+                    <span>GitHub Stats</span>
+                    <Code size={24} />
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-6">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div className="text-center p-4 bg-gray-50 rounded-lg">
+                      <p className="text-gray-500 text-sm">Contributions</p>
+                      <p className="text-3xl font-bold text-orange-500">160+</p>
+                    </div>
+                    <div className="text-center p-4 bg-gray-50 rounded-lg">
+                      <p className="text-gray-500 text-sm">Trophies</p>
+                      <p className="text-3xl font-bold text-blue-500">11</p>
+                    </div>
+                    <div className="text-center p-4 bg-gray-50 rounded-lg">
+                      <p className="text-gray-500 text-sm">
+                        Open Source Contributions
+                      </p>
+                      <p className="text-3xl font-bold text-green-500">
+                        HactoberFest 2024
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-gray-600 mb-6 text-center">
+                    I regularly solve algorithmic problems to sharpen my
+                    problem-solving skills and coding efficiency.
+                  </p>
+                  <div className="flex justify-center">
+                    <Button
+                      asChild
+                      className="bg-gradient-to-r from-indigo-500 to-sky-500 hover:from-orange-600 hover:to-red-600"
+                    >
+                      <a
+                        href="https://github.com/BhaskarKulshrestha/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        <ExternalLink size={16} /> Visit My GitHub Profile
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Resume Section */}
         <section className="py-20 px-4 bg-white">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
               Download My{" "}
-              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Resume</span>
+              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                Resume
+              </span>
             </h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Get a comprehensive overview of my skills, experience, and educational background in a downloadable PDF
-              format.
+              Get a comprehensive overview of my skills, experience, and
+              educational background in a downloadable PDF format.
             </p>
             <ResumeButton />
           </div>
@@ -400,12 +743,15 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center">
               Get In{" "}
-              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">Touch</span>
+              <span className="bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+                Touch
+              </span>
             </h2>
 
             <div className="max-w-3xl mx-auto">
               <p className="text-gray-600 mb-8 text-center text-lg">
-                Feel free to reach out for collaborations, opportunities, or just to say hello!
+                Feel free to reach out for collaborations, opportunities, or
+                just to say hello!
               </p>
 
               <div className="flex flex-col md:flex-row justify-center gap-6 mb-12">
@@ -448,7 +794,9 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-medium">Email</h3>
-                    <p className="text-sm text-gray-500">bhaskarkulshrestha03@gmail.com</p>
+                    <p className="text-sm text-gray-500">
+                      bhaskarkulshrestha03@gmail.com
+                    </p>
                   </div>
                 </a>
               </div>
@@ -457,13 +805,22 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle>Send Me a Message</CardTitle>
                   <CardDescription>
-                    Fill out the form below and I'll get back to you as soon as possible.
+                    Fill out the form below and I'll get back to you as soon as
+                    possible.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="contact-right">
-                    <form action="https://api.web3forms.com/submit" method="POST" className="space-y-4">
-                      <input type="hidden" name="access_key" value="ab407391-0d88-4806-831c-2fd7c6ba7477" />
+                    <form
+                      action="https://api.web3forms.com/submit"
+                      method="POST"
+                      className="space-y-4"
+                    >
+                      <input
+                        type="hidden"
+                        name="access_key"
+                        value="ab407391-0d88-4806-831c-2fd7c6ba7477"
+                      />
 
                       <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium">
@@ -494,7 +851,10 @@ export default function Home() {
                       </div>
 
                       <div className="space-y-2">
-                        <label htmlFor="message" className="text-sm font-medium">
+                        <label
+                          htmlFor="message"
+                          className="text-sm font-medium"
+                        >
                           Message
                         </label>
                         <textarea
@@ -519,7 +879,11 @@ export default function Home() {
                         </Button>
                       </div>
                     </form>
-                    <script src="https://web3forms.com/client/script.js" async defer></script>
+                    <script
+                      src="https://web3forms.com/client/script.js"
+                      async
+                      defer
+                    ></script>
                   </div>
                 </CardContent>
               </Card>
@@ -534,7 +898,9 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold mb-2">Bhaskar Kulshrestha</h2>
-              <p className="text-gray-400">Software Developer & Problem Solver</p>
+              <p className="text-gray-400">
+                Software Developer & Problem Solver
+              </p>
             </div>
             <div className="flex space-x-6">
               <a
@@ -564,17 +930,23 @@ export default function Home() {
                 <Code className="h-6 w-6" />
                 <span className="sr-only">LeetCode</span>
               </a>
-              <a href="mailto:bhaskarkulshrestha03@gmail.com" className="hover:text-purple-400 transition-colors">
+              <a
+                href="mailto:bhaskarkulshrestha03@gmail.com"
+                className="hover:text-purple-400 transition-colors"
+              >
                 <Mail className="h-6 w-6" />
                 <span className="sr-only">Email</span>
               </a>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Bhaskar Kulshrestha. All rights reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Bhaskar Kulshrestha. All rights
+              reserved.
+            </p>
           </div>
         </div>
       </footer>
     </div>
-  )
+  );
 }
