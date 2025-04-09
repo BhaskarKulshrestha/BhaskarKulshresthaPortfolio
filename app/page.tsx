@@ -629,7 +629,7 @@ export default function Home() {
                     <div className="text-center p-4 bg-gray-50 rounded-lg">
                       <p className="text-gray-500 text-sm">Global Ranking</p>
                       <p className="text-3xl font-bold text-green-500">
-                        Top 10%
+                        Top 30%
                       </p>
                     </div>
                   </div>
