@@ -15,14 +15,24 @@ import { Badge } from "@/components/ui/badge";
 import { ResumeButton } from "@/components/resume-button";
 
 
+const getDurationInYearsAndMonths = () => {
+  const startYear = 2024;
+  const startMonth = 8; // August (1-based index)
 
-const getDurationInMonths = () => {
-  const startDate = new Date(2024, 7); // August is month index 7 (0-based)
+  const startDate = new Date(startYear, startMonth - 1); // Convert to 0-based
   const today = new Date();
-  const months =
-    (today.getFullYear() - startDate.getFullYear()) * 12 +
-    (today.getMonth() - startDate.getMonth());
-  return months;
+
+  let years = today.getFullYear() - startDate.getFullYear();
+  let months = today.getMonth() + 1 - startMonth; // Convert to 1-based
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  return `${years > 0 ? `${years} yr${years > 1 ? "s" : ""} ` : ""}${
+    months > 0 ? `${months} mo${months > 1 ? "s" : ""}` : ""
+  }`;
 };
 
 
@@ -183,7 +193,7 @@ export default function Home() {
                   </CardTitle>
                   <CardDescription className="text-gray-500">
 {/*                     Full-time • 9 mos • Bengaluru, Karnataka, India */}
-                    <span>{`Full-time • ${getDurationInMonths()} mos • Bengaluru, Karnataka, India`}</span>
+                    <span>{`Full-time • ${getDurationInYearsAndMonths()} • Bengaluru, Karnataka, India`}</span>
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="py-4">
