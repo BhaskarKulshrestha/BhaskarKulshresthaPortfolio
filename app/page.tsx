@@ -14,6 +14,18 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { ResumeButton } from "@/components/resume-button";
 
+
+
+const getDurationInMonths = () => {
+  const startDate = new Date(2024, 7); // August is month index 7 (0-based)
+  const today = new Date();
+  const months =
+    (today.getFullYear() - startDate.getFullYear()) * 12 +
+    (today.getMonth() - startDate.getMonth());
+  return months;
+};
+
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
@@ -170,7 +182,8 @@ export default function Home() {
                     SAP
                   </CardTitle>
                   <CardDescription className="text-gray-500">
-                    Full-time • 9 mos • Bengaluru, Karnataka, India
+{/*                     Full-time • 9 mos • Bengaluru, Karnataka, India */}
+                    <span>{`Full-time • ${getDurationInMonths()} mos • Bengaluru, Karnataka, India`}</span>
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="py-4">
@@ -178,7 +191,7 @@ export default function Home() {
                     SAP Next Gen STAR - Software Engineer
                   </h3>
                   <p className="text-gray-600 mb-2">
-                    Sep 2024 - Present • ( On-site )
+                    Aug 2024 - Present • ( On-site )
                   </p>
                   <p className="text-gray-600 mb-2 font-semibold">
                     Key Highlights:
