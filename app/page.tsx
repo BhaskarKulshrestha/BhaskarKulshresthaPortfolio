@@ -175,8 +175,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent className="py-4">
                   <h3 className="font-semibold mb-2">
-                    Rotation Phase-1: Developer - S/4 Hana Professional Services
-                    Project #abap
+                    SAP Next Gen STAR - Software Engineer
                   </h3>
                   <p className="text-gray-600 mb-2">
                     Sep 2024 - Present • ( On-site )
@@ -251,7 +250,7 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-xl font-semibold flex items-center gap-2">
                     <Image
-                      src="https://scontent-gig4-2.xx.fbcdn.net/v/t39.30808-6/327004267_464468942404908_224498575824111512_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xHj9kXV-GIgQ7kNvwEJSCqO&_nc_oc=AdmT4V24PVegaHDBN2bix8tL70ybqc5VxtnLeQEpegnk26RXLdpim_0iamrUABFynV0&_nc_zt=23&_nc_ht=scontent-gig4-2.xx&_nc_gid=hGIjDEknl4SPlmF2NQ_AGA&oh=00_AfHaK5jta-HqgcrGVY6JC_bs67et4qCeQjDG60qotd68lg&oe=67FC7E0E"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyq7rG9Y9tkmDZLIzbnde7wd08wokqwaSAlA&s"
                       alt="Oasis Infobyte Logo"
                       width={100}
                       height={100}
